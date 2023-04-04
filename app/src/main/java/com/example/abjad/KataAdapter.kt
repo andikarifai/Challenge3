@@ -4,13 +4,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.abjad.Kamus
 import com.example.abjad.databinding.ItemKataBinding
 
+
 class KataAdapter(private var data: List<Kamus>, private val onItemClick: (String) -> Unit) :
     RecyclerView.Adapter<KataAdapter.ViewHolder>() {
-
-    fun setData(newData: List<Kamus>) {
-        data = newData
-        
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = ItemKataBinding.inflate(LayoutInflater.from(parent.context), parent, false)

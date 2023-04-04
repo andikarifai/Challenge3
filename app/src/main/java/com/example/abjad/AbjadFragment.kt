@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.navigation.fragment.findNavController
+
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.abjad.databinding.FragmentAbjadBinding
+
 
 class AbjadFragment : Fragment() {
 
@@ -33,6 +35,13 @@ class AbjadFragment : Fragment() {
 
         return binding.root
     }
+    private fun onAbjadItemClick(abjad: String) {
+        // Buat NavDirections dengan mengirimkan abjad sebagai argumen
+        val action = AbjadFragmentDirections.actionAbjadFragmentToKataFragment()
+        // Navigasi ke Fragment tujuan
+        findNavController().navigate(action)
+    }
+
 
     // Generate daftar abjad dari A sampai Z
     private fun generateAbjad(): List<String> {

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/abjadFragment">
+
+
+    <fragment
+        android:id="@+id/abjadFragment"
+        android:name="com.example.abjad.AbjadFragment"
+        android:label="AbjadFragment"
+        tools:layout="@layout/fragment_abjad">
+        <action
+            android:id="@+id/action_abjadFragment_to_kataFragment"
+            app:destination="@id/kataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kataFragment"
+        android:name="com.example.abjad.KataFragment"
+        android:label="KataFragment"
+        tools:layout="@layout/fragment_kata"/>
+</navigation>
