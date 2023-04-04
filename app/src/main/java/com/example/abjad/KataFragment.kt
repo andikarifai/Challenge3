@@ -1,6 +1,7 @@
 package com.example.abjad
 
 
+import KataAdapter
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -37,7 +38,4 @@ class KataFragment : Fragment() {
         return binding.root
     }
 
-    fun setData(data: List<Kamus>) {
-        adapter.setData(data)
-    }
 }

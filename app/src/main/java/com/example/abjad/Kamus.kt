@@ -1,4 +1,7 @@
 package com.example.abjad
 
-data class Kamus(val abjad: String, val kata: String)
+import java.io.Serializable
+
+data class Kamus(val abjad: String, val kata: String): Serializable
+
 

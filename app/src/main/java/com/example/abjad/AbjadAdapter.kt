@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.abjad.databinding.ItemAbjadBinding
 
+
 class AbjadAdapter(
     private val data: List<String>,
     private val onItemClick: (abjad: String) -> Unit

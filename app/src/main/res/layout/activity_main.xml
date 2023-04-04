@@ -8,25 +8,14 @@
     <!-- RecyclerView untuk tombol abjad -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvAbjad"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/rvKata"
         android:orientation="vertical"
         android:background="#ffffff"/>
 
-    <!-- RecyclerView untuk tombol kata -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvKata"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/rvAbjad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:scrollbars="vertical"
-        android:background="#ffffff"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
